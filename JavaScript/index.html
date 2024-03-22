@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script data type</title>   
+    <p id ="demo"></p> 
+    <script>
+         var number=8;
+         console.log(number);
+         console.log(typeof number)
+
+         var num=11e4;
+         console.log(num);
+
+           var message;
+           message="Hi Javascript";
+           
+           console.log(message);
+           console.log(typeof message)
+
+           //var octnumber=0234;
+           var hexnumber=0xff;
+           //console.log(octnumber);
+           console.log(hexnumber);
+
+           var yes=true;
+           var no=false;
+           console.log(yes);
+           console.log(false);
+
+           var emptyvalue=null;
+           console.log(emptyvalue);
+           console.log(typeof emptyvalue);
+
+           var weird;
+           console.log(weird);
+           console.log(typeof weird);     
+
+           var result=50;
+           var othervar = ++result +5;
+           console.log(othervar);
+
+           var result=50;
+           var anothervar = result++ + 5;
+           console.log(anothervar);
+
+           var lang="Javascript";
+           console.log("Hello" +" " + lang + "!");
+
+           console.log(lang + 101);
+
+           console.log(2023-"sometext");
+           var number = 10 
+           console.log(number / 0);
+           
+           //variableName = booleanExpress ? trueValue : falseValue
+           var age = 18, isMinor;
+           isMinor = age >=18 ? "No" : "Yes";
+           console.log(isMinor);
+
+           var num = 5;
+           num -= 2;
+           console.log('num' , num);
+
+           //prompt, alert and confirm
+          // var name = prompt("What is your name");
+           //alert("Hello" + " " + name + "!")
+
+           //var response = confirm("I am learning javascript");
+           //alert(response);*/
+
+          /* var age = prompt("Enter your age");           
+           var parentpermission = prompt("Do u have your parents permission");
+                      
+           if(age >= 16 || parentpermission == yes){
+            console.log(alert ("You are allowed for the rides"));
+            }
+           else{
+            console.log(alert("You are NOT allowed for the rides"));             
+           }*/
+           
+
+           //while loop
+           /*var count = 10; 
+           while (count > 0){
+            console.log('count :', count--);
+           }
+           console.log("While loop ended");*/
+
+           //Roller coaster
+
+           /*var age = prompt("What is your age");
+           if (age <18){
+                 var parpermission = confirm("I have my parents permission");
+                 if(parpermission){
+                     alert("You are allowed for roller coaster");
+                }
+                  else{
+                    alert("You are not allowed for roller coaster");
+                  }    
+                }
+            else{
+                console.log("You are allowed for roller coaster");
+            }*/
+            
+            /*var books = new Array('Java', 'HTML' ,'cloud', 'AWS');
+            console.log(books);
+            console.log(books.length);
+
+            books.push('.net','excel');
+            console.log(count);
+            var removedbooks = books.pop();
+            console.log(removedbooks);
+
+            var now = new Date();
+            console.log(now); */
+
+            var factorial = function(num){
+              if (num <=1) {
+                return 1;
+              } else
+               {
+                 return num* factorial ( num - 1)
+              
+               }
+              }
+            console.log('factorial:', factorial(6))
+
+         var myJSON = {"name":"Sathya", "age":41, "city":"Bangalore", "kids":2}
+         var myObj = JSON.parse(myJSON)
+         document.getElementById("demo").innerHTML = myObj.city
+
+          
+           
+
+           
+                  
+
+           
+
+           
+
+
+
+        </script>
+     
+</head>
+        
+<body> 
+</body>
+</html>

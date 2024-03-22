@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+let x = prompt("Enter the first number");
+
+let y = prompt("Enter the second number");
+
+let z = prompt("Enter the third number");
+
+let biggerNumber;
+
+if (x>y && x>z) {
+  biggerNumber = x;
+} else if (y>x && y>z) {
+  biggerNumber = y;
+} else {
+  biggerNumber = z;
+}
+document.getElementById("demo").innerHTML = biggerNumber;
+//1console.log(biggerNumber);
+</script>
+
+</body>
+</html>
